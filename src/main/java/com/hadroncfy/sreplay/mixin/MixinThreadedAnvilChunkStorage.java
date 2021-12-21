@@ -29,7 +29,6 @@ public abstract class MixinThreadedAnvilChunkStorage {
     private int getWatchDistance$lambda0$getPlayersWatchingChunk(ThreadedAnvilChunkStorage cela, ChunkPos pos, boolean bl, ServerPlayerEntity player){
         return getRealViewDistance(player, watchDistance);
     }
-     */
 
     @Redirect(method = "method_17219", at = @At(
         value = "FIELD",
@@ -49,4 +48,5 @@ public abstract class MixinThreadedAnvilChunkStorage {
         }
         return this.watchDistance;
     }
+     */
 }
